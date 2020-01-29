@@ -1,0 +1,235 @@
+body {
+  margin: 0;
+  font-family: 'Ibarra Real Nova', serif;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+button {
+  background: black;
+  padding: .7em 1em;
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+
+.video-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.video-half {
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: #191816;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .video-half {
+    width: 100%;
+  }
+}
+
+.portada {
+  position: relative;
+}
+
+.portada .title-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+.portada .title-container h1, .portada .title-container p {
+  font-weight: normal;
+  color: white;
+  text-align: center;
+  text-shadow: 0px 4px 10px black;
+}
+
+.portada .title-container h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+  margin-bottom: .5em;
+}
+
+@media (min-width: 768px) {
+  .portada .title-container h1 {
+    font-size: 70px;
+  }
+}
+
+.portada .title-container p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (min-width: 768px) {
+  .portada .title-container p {
+    font-size: 20px;
+  }
+}
+
+.img-portada {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: -5px;
+  -webkit-filter: brightness(0.75);
+          filter: brightness(0.75);
+}
+
+@media (min-width: 1024px) {
+  .img-portada {
+    height: initial;
+  }
+}
+
+.text-white {
+  color: #DCD7D1 !important;
+}
+
+button.share {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+button.share i {
+  color: white;
+  margin-right: 0.5em;
+}
+
+.fullscreen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  width: 100%;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .fullscreen {
+    padding: 3rem;
+  }
+}
+
+.halfscreen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 1024px) {
+  .halfscreen {
+    width: 50%;
+  }
+}
+
+.left {
+  margin-right: auto;
+}
+
+@media (min-width: 1024px) {
+  .left {
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .right {
+    padding-left: 1.5rem;
+    margin-left: auto;
+  }
+}
+
+.fit-cover {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.bg-black {
+  background-color: #191816;
+}
+
+.bg-white {
+  background-color: #DCD7D1;
+}
+
+.paragraph {
+  text-align: center;
+  color: #191816;
+  font-size: 1.25rem;
+  max-width: 600px;
+  line-height: 140%;
+  padding: 1rem;
+}
+
+.firstcharacter {
+  float: left;
+  font-size: 4em;
+  line-height: 1em;
+  padding-right: 5px;
+  padding-left: 3px;
+  color: #5F2704;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.stacking-slide {
+  height: 120vh;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.stacking-slide:nth-last-child(1) {
+  height: 100vh;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=styles.css.map */
